@@ -20,7 +20,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./assignment 3.1/mainf/
+        working-directory: ./assignment 3.1/mainf
 
     steps:
       - uses: actions/checkout@v3
