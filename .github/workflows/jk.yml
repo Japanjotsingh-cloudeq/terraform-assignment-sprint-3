@@ -15,7 +15,7 @@ on:
 
 env:
   BUCKET: japanjot-demo15
-  TFSTATE_FILE: new.tfstate 
+  TFSTATE_FILE: new.tfstate g
   DB_TABLE: japanjot-demo1598
 
 
