@@ -10,8 +10,8 @@ on:
         # default: ''u-east-1
         # Input has to be provided for the workflow to run
         required: true
-  push:
-    branches: [ "main" ]
+  # push:
+  #   branches: [ "main" ]
 
 env:
   BUCKET: japanjot-demo15
