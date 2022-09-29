@@ -15,7 +15,7 @@ on:
 
 env:
   BUCKET: japanjot-demo15
-  TFSTATE_FILE: new.tfstate 
+  TFSTATE_FILE: new.tfstate g
   DB_TABLE: japanjot-demo1598
 
 
@@ -41,7 +41,7 @@ jobs:
           aws-secret-access-key:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-session-token:      ${{ secrets.AWS_SESSION_TOKEN }} add token in secrets
 
-          aws-region: us-east-1      
+          aws-region: ${{ github.event.inputs.region-value }}      
 
       - name: Terraform Init
         id: init
