@@ -2,6 +2,14 @@ name : 'Terraform'
 
 on:
   workflow_dispatch:
+    inputs:
+      region-value:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'enter region'
+        # Default value if no value is explicitly provided
+        # default: ''u-east-1
+        # Input has to be provided for the workflow to run
+        required: true
   push:
     branches: [ "main" ]
 
