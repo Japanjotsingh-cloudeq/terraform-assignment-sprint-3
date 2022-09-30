@@ -15,7 +15,7 @@ on:
 
 env:
   BUCKET: jap-backend
-  TFSTATE_FILE: new.tfstate g
+  TFSTATE_FILE: new.tfstate g2
   DB_TABLE: japan-backend-tb
 
 
