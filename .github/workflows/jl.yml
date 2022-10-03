@@ -2,18 +2,19 @@ name : 'Terraform'
 
 on:
   workflow_dispatch:
-    inputs:
-      region-value:
-        # Friendly description to be shown in the UI instead of 'name'
-        description: 'enter region'
-        # Default value if no value is explicitly provided
-        # default: ''u-east-1
-        # Input has to be provided for the workflow to run
-        required: true
-  # push:
-  #   branches: [ "main" ]
+    # inputs:
+    #   region-value:
+    #     # Friendly description to be shown in the UI instead of 'name'
+    #     description: 'enter region'
+    #     # Default value if no value is explicitly provided
+    #     # default: ''u-east-1
+    #     # Input has to be provided for the workflow to run
+    #     required: true
+  push:
+    branches: [ "main" ]
 
 env:
+  REGION: us-east-2
   BUCKET: jap-backend
   TFSTATE_FILE: new.tfstate g2
   DB_TABLE: japan-backend-tb
@@ -41,7 +42,7 @@ jobs:
           aws-secret-access-key:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-session-token:      ${{ secrets.AWS_SESSION_TOKEN }} add token in secrets
 
-          aws-region: ${{ github.event.inputs.region-value }}      
+          aws-region: ${{ env.REGION }}                      #${{ github.event.inputs.region-value }}      
 
       - name: Terraform Init
         id: init
