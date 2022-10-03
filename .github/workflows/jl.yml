@@ -14,7 +14,7 @@ on:
     branches: [ "main" ]
 
 env:
-  REGION: us-east-2
+  REGION: us-west-2
   BUCKET: jap-backend
   TFSTATE_FILE: new.tfstate g2
   DB_TABLE: japan-backend-tb
