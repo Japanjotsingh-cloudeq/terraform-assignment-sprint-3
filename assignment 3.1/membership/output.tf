@@ -3,6 +3,6 @@ output "memb" {
   
 }
 output "mem" {
-    value = [for i in aws_iam_user_group_membership.japa-dev2 : i]
+    value = [for i in aws_iam_user_group_membership.jap-dev2 : i]
   
 }
