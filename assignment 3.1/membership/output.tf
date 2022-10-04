@@ -1,5 +1,5 @@
 output "memb" {
-    value = [for i in var.g1 : i]
+    value = [for i in aws_iam_user_group_membership.jap-dev2 : i]
   
 }
 output "mem" {
