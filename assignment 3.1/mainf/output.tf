@@ -1,9 +1,9 @@
 output "group" {
-    value = [for i in var.d1 : i]
+    value = module.iams.gp
   
 }
 output "user" {
-    value = [for i in var.d2 : i]
+    value = module.iama.urs
   
 }
 output "memberp" {
