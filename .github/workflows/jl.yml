@@ -15,7 +15,7 @@ on:
 
 env:
   REGION: ap-south-1
-  BUCKET: jap-backend
+  BUCKET: japanjot-backend
   TFSTATE_FILE: new.tfstate 
   DB_TABLE: japan-tb
 
