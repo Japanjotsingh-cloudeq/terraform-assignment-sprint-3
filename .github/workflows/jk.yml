@@ -14,10 +14,10 @@ on:
   #   branches: [ "main" ]
 
 env:
-  REGION: us-west-2
-  BUCKET: jap-backend
-  TFSTATE_FILE: new.tfstate g2
-  DB_TABLE: japan-backend-tb
+  REGION: ap-south-1
+  BUCKET: japanjot-backend
+  TFSTATE_FILE: new.tfstate
+  DB_TABLE: japan-tb
 
 
 jobs:
